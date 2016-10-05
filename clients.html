@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Test écriture</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" language="javascript" src="jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="functions.js"></script>
+		<script type="text/javascript" language="javascript">
+			
+			$(document).ready(function(){
+				readFileClients();
+
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="entries">
+			<label value="">Nom</label><input id="nom" type="text"></input></br>
+			<label value="">Prénom</label><input id="prenom" type="text"></input></br>
+			<label value="">Code postal</label><input id="cp" type="text"></input></br>
+			<label value="">Adresse</label><input id="adr" type="text"></input></br>
+			<label value="">Téléphone</label><input id="tel" type="text"></input></br>
+			<label value="">Mail</label><input id="mail" type="text"></input></br>
+			<label value="">Delete</label><input id="delCli" type="text"></input></br>
+			<button onclick="writeFileClients();$('#tableClient').empty();readFileClients();">Ajouter toto !</button></br>
+			<button onclick="writeFileClients(1);$('#tableClient').empty();readFileClients();">Delete toto !</button></br>
+			<button onclick="makeTable();">Table !</button></br>
+		</div>
+		<div id="results"></div>
+		<div id="tableClient">
+			
+			
+		</div>
+
+
+	</body>
+
+
+
+</html>
